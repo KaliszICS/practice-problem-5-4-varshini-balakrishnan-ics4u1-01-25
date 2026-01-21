@@ -18,8 +18,8 @@ class VideoPlayer implements Player {
     }
     @Override
     public void stop() {
-        if(this.onOff == false) {
-            this.onOff = true;
+        if(this.onOff == true) {
+            this.onOff = false;
         }
     }
     public boolean getOnOff() {

@@ -20,19 +20,10 @@ class RadioPlayer implements Player {
         }
     }
     @Override
-    public void start() {
-        if (this.onOff == false) {
-            this.onOff = true;
-            if(this.stationList.length > 0) {
-                this.station = this.stationList[0];
-            }
-        }
-    }   
-    @Override
     public void stop() {
         if(this.onOff == true) {
             this.onOff = false;
-            this.station = 0;
+            this.station = 0.0;
         }
     }
     public boolean getOnOff() {

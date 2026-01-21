@@ -51,7 +51,7 @@ class MusicPlayer implements Player {
                 index = i;
             }
         }
-        if (index == this.musicList.length - 1) {
+        if (index < this.musicList.length - 1) {
             this.currentSong = this.musicList[index + 1];
         }
     }
